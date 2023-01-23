@@ -7,7 +7,7 @@ const express_1 = __importDefault(require("express"));
 const app = (0, express_1.default)();
 const port = process.env.PORT || 8080;
 app.get('/', (_req, res) => {
-    return res.send('Express Typescript on Vercel');
+    return res.json({ "a": 123 });
 });
 app.get('/ping', (_req, res) => {
     return res.send('pong 🏓');
